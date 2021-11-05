@@ -35,7 +35,7 @@ Tools you'll need:
 - Solder
 - 24 gauge wire
 - Wire strippers (or scissors/knife if you're very, *very* careful)
-- M3 hex wrench/driver
+- M3 allen wrench/hex key
 - Soldering station or helping hands (optional, but highly recommended)
 
 _Now let's get started!_
