@@ -40,7 +40,7 @@ Q: My tracker won't turn on and I can't figure out what's wrong!
 A: It's almost always a faulty wire connection. Check to make sure everything is still soldered together and there are no shorts anywhere.
 
 Q: I don't know how to / can't design my own mounting plate, but still want something custom. What can I do?  
-A: If you're willing to pay, send me a DM on Discord at `QuantumRed#0001` and I'll see what I can do for you.
+A: If you're willing to pay, I accept commissions for custom mounting plate designs over on my [Ko-fi](https://ko-fi.com/quantumred).
 
 Q: How can I support / thank you?  
 A: Shoot me a message on Discord telling me about your build experience! I'm always looking to improve my designs/guides, so feedback is always greatly appreciated. If you want to support me financially, you can support me on [Ko-fi](https://ko-fi.com/quantumred) or send Bitcoin to `1Fy8P4goVpdo7ZmLzJAwYnoPkdznbwAGi4`.
