@@ -1,6 +1,8 @@
 # V4 Print and Build Guide
 So you want to build a QuantumSlime tracker, huh? Well, you've come to the right place.
 
+For a list of components and how to source them, refer back to the [release page](https://github.com/Quantum-Red/QuantumSlimes/releases/tag/V4).
+
 ## What files to print
 You will need to print [`V4.Case.Top.stl`](https://github.com/Quantum-Red/QuantumSlimes/blob/main/V4/V4.Case.Top.stl), [`V4.Case.Bottom.stl`](https://github.com/Quantum-Red/QuantumSlimes/blob/main/V4/V4.Case.Bottom.stl), and [`V4.Components.Plate.stl`](https://github.com/Quantum-Red/QuantumSlimes/blob/main/V4/V4.Components.Plate.stl) for the case, and then a [mounting plate](https://github.com/Quantum-Red/QuantumSlimes/tree/main/V4/Mounting%20Plates) to be able to attach the tracker to your body. Choose from one of the [already available mounting plates](https://github.com/Quantum-Red/QuantumSlimes/tree/main/V4/Mounting%20Plates) or download and modify [`V4.Template.Mounting.Plate.stl`](https://github.com/Quantum-Red/QuantumSlimes/blob/main/V4/Mounting%20Plates/V4.Template.Mounting.Plate.stl) to design your own mounting solution. If you do end up making your own design, please share it with the community by uploading it in a pull request to the [mounting plates directory](https://github.com/Quantum-Red/QuantumSlimes/tree/main/V4/Mounting%20Plates).
 
