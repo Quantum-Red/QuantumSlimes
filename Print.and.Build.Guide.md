@@ -40,5 +40,10 @@ Tools you'll need:
 
 _Now let's get started!_
 
-### Step 1
-Bruh I'm tired I'ma go to sleep and finish writing this later lol
+### Step 0
+Do you currently have caffine in your system? If yes, then I recommend doing this later, as caffine jitters will make soldering very hard. Anything that will affect your ability to hold things still will make soldering everything together much harder and increase the chance of accidentaly slipping and melting a bit of the case or burning a component. You have been warned.
+
+### Step 1 - Prep 3D prints
+Remove any support material, stringing, or minor defects from your 3D prints. There will be support material underneath the clips on the mounting plate, so make sure to remove that.
+
+### Step 2
