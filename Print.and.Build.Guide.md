@@ -9,6 +9,8 @@ You will need to print [`V4.Case.Top.stl`](https://github.com/Quantum-Red/Quantu
 ___
 
 ## Recommended printer settings
+_(Tested with PLA+ fillament)_
+
 For `V4.Case.Top.stl`, `V4.Case.Bottom.stl`, and `V4.Components.Plate.stl`, these are the settings I recommend:
 Layer height | 0.16mm
 :--- | :---:
@@ -129,8 +131,8 @@ In `defines.h`, change this code block at the top
 // Set parameters of IMU and board used
 #define IMU IMU_BNO085
 #define BOARD BOARD_SLIMEVR
-#define IMU_ROTATION -PI / 2.0
-#define SECOND_IMU_ROTATION PI / 2.0
+#define IMU_ROTATION DEG_90
+#define SECOND_IMU_ROTATION DEG_270
 #define BATTERY_SHIELD_130K false
 ```
 
@@ -139,8 +141,8 @@ to this
 // Set parameters of IMU and board used
 #define IMU IMU_BNO085
 #define BOARD BOARD_WEMOSD1MINI
-#define IMU_ROTATION PI / 2.0
-#define SECOND_IMU_ROTATION PI / 2.0
+#define IMU_ROTATION DEG_270
+#define SECOND_IMU_ROTATION DEG_270
 #define BATTERY_SHIELD_130K false
 ```
 
@@ -218,4 +220,4 @@ To begin using your tracker, simply start up the SlimeVR Server software (read u
 Something not working or having problems with software? Ask for assistance in the `#diy` channel on the Discord server.
 
 _This concludes my TedTalk, thank you for reading :D_
-###### _Designed and written by QuantumRed#0001_
+###### _Designed and written by QuantumRed#0001 - Last updated December 30th, 2021_
