@@ -32,7 +32,7 @@ Any other print settings will be up to you and what works best for your printer 
 ___
 
 ## Assembly
-So now that you've got all your parts printed out and all your electronics have arrived in the mail, it's time to start putting it all together into a working tracker!
+So now that you've got all your parts printed out and all your electronics have arrived in the mail, it's time to start putting it all together into a working tracker! (If you haven't purchased your parts yet, check the [parts list](https://github.com/Quantum-Red/QuantumSlimes/releases/tag/V4) first before continuing)
 
 Tools you'll need:
 - Soldering iron
