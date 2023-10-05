@@ -29,7 +29,7 @@
 
 ## License
 All my work under the QuantumSlimes project is in the public domain under the Unlicense license.  
-For more info, read [UNLICENSE](UNLICENSE)  
+For more info, read [LICENSE](LICENSE)  
 
 ## FAQ
 **Can I use these designs or written guides or pictures in my own project/business?**  
