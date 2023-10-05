@@ -28,7 +28,7 @@
 - For any additional assistance, join the [SlimeVR Discord Server](https://discord.gg/SlimeVR) for help and to engage with the community.  
 
 ## License
-All my work under the QuantumSlimes project is in the public domain under the Unlicense license.  
+All my work under the QuantumSlimes project is in the public domain under the Creative Commons CC0-1.0 License.  
 For more info, read [LICENSE](LICENSE)  
 
 ## FAQ
