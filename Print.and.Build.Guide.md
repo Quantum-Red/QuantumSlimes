@@ -116,50 +116,35 @@ IMU | D1-Mini
 ___
 
 ### Step 7 - Flashing firmware
-Congrats, you've wired everything together! It's time to flash the SlimeVR firmware onto the D1-Mini before we close the case up.
+Congrats, you've wired everything together! It's time to flash the SlimeVR firmware onto your new tracker before we close the case up.
 
-To get started, make sure the switch is in the `off` position (to the right or away from the USB-C charging port), then plug in your D1-Mini via micro-usb to your computer. You should see a blue light underneath the D1-Mini begin flashing.
+To get started, make sure the switch is in the `off` position (to the right or away from the USB-C charging port), then plug in your D1-Mini via micro-usb to your computer. You should see a blue light underneath the D1-Mini begin flashing. (Make sure you are using a data-transfer cable and not just a charging cable.)
 
 <img src="https://github.com/Quantum-Red/QuantumSlimes/blob/main/Misc/Build%20Guide%20Photos/flash_d1mini.jpeg" alt="flash_d1mini.jpeg" title="flash_d1mini.jpeg" width="300"/>
 
-Next, you'll want to head over to the [SlimeVR Docs - Updating the tracker firmware]() page. That guide will tell you how to flash the firmware onto the board, although there are some things that are different:
-- For step 3, download and install the CH340 drivers, not the CP210X drivers.
-- For step 7, configure the driver as such:
+If you are using a Chromium based browser such as Chrome, Edge, Opera, or Brave, you can use the web installer found [here](https://slimevr-firmware-tool.futurabeast.com/). If you do not have access to a Chromium based browser or other cannot get this method to work, follow the instructions found [here](https://docs.slimevr.dev/firmware/setup-and-install.html).
 
-In `defines.h`, change this code block at the top
-```C++
-// Set parameters of IMU and board used
-#define IMU IMU_BNO085
-#define BOARD BOARD_SLIMEVR
-#define IMU_ROTATION DEG_90
-#define SECOND_IMU_ROTATION DEG_270
-#define BATTERY_SHIELD_130K false
-```
-
-to this
-```C++
-// Set parameters of IMU and board used
-#define IMU IMU_BNO085
-#define BOARD BOARD_WEMOSD1MINI
-#define IMU_ROTATION DEG_270
-#define SECOND_IMU_ROTATION DEG_270
-#define BATTERY_SHIELD_130K false
-```
-
-And in `platformio.ini`, remove the `;` at the beginning of these three lines and replace `SSID` with your 2.4ghz wifi name, and `PASSWORD` with your wifi password, like so:
-
-<img src="https://github.com/Quantum-Red/QuantumSlimes/blob/main/Misc/Build%20Guide%20Photos/hardcoded_wifi_creds.gif" alt="hardcoded_wifi_creds.gif" title="hardcoded_wifi_creds.gif"/>
+If using the web installer, here are the options you will want to select:
+Option | Selection
+:---: | :---:
+`Firmware Version` | `Latest`
+`Board` | `BOARD_WEMOSD1MINI`
+`IMU Type` | `IMU_BNO080`
+`IMU Rotation (DEG)` | `270`
+`IMU INT Pin` | `D5`
+`Wifi Settings` | `Enter your wifi network credentials`
 
 Once you have successfully uploaded your firmware, let's double-check to make sure everything is working. It's bad karma to close up an electronics project before testing it, after all.
 
-If you don't already have it installed, you're going to need to download the installer for [SlimeVR Server](https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe). Once the download completes, run through the installation setup; then after it's installed, open SlimeVR server. Now turn on your tracker. If you see a tracker pop-up in the window and numbers moving when you move the tracker as shown below, then that means you did everything correctly!
+If you don't already have it installed, you're going to need to download the installer for [SlimeVR Server](https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe). Once the download completes, run through the installation setup; then after it's installed, open SlimeVR server. The beautifully designed SlimeVR Server application will guide you through first-time setup of your new tracker. Ensure that the tracker is detected and working, after which, you are free proceed to step 8 and close up the tracker.
 
-<img src="https://github.com/Quantum-Red/QuantumSlimes/blob/main/Misc/Build%20Guide%20Photos/SlimeVR_server.gif" alt="SlimeVR_server.gif" title="SlimeVR_server.gif"/>
+<img src="https://docs.slimevr.dev/assets/img/Setup_Welcome.png" alt="SlimeVR_server_setup.png" title="SlimeVR_server_setup.png"/>
 
 If that doesn't happen, you most likely did something wrong. Some troubleshooting steps to take would be:
 - Make sure your tracker is connected to a 2.4ghz wifi network, not 5ghz
 - Try re-flashing the D1-Mini
 - Double check for any de-soldered wires
+- If your board is not detected when plugged in, make sure to run the [SlimeVR Web Installer](https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe) and tick the box to install the USB drivers. If your board is still not detected, try rebooting, and double check that your cable is capable of data transfer and that it is not a charging-only cable.
 
 If none of those work, reach out for help in the `#diy` channel on the [SlimeVR Discord Server](https://discord.gg/SlimeVR).
 
@@ -215,9 +200,9 @@ ___
 ## Congratulations! You've built your very own QuantumSlime tracker!
 Share your results in the `#diy-gallery` channel on the [SlimeVR Discord Server](https://discord.gg/SlimeVR)!
 
-To begin using your tracker, simply start up the SlimeVR Server software (read up on how to [configure](https://docs.slimevr.dev/slimevr-setup.html)), turn on and put on your trackers, start up SteamVR, [calibrate](https://docs.slimevr.dev/skeleton-auto-config.html), and profit.
+To begin using your tracker, simply start up the SlimeVR Server software, turn on and put on your trackers, [configure](https://docs.slimevr.dev/server/configuring-trackers.html) your trackers, start up SteamVR, calibrate, and profit. If using trackers in VRChat on standalone Oculus (Meta) headsets, read [here](https://docs.slimevr.dev/server/osc-information.html).
 
 Something not working or having problems with software? Ask for assistance in the `#diy` channel on the Discord server.
 
 _This concludes my TedTalk, thank you for reading :D_
-###### _Designed and written by QuantumRed#0001 - Last updated December 30th, 2021_
+###### _Designed and written by QuantumRed - 🄍 CC0 Public Domain - Last updated October 5th, 2023_
