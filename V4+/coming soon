@@ -1,0 +1,7 @@
+Fixes to most/all of V4's issues including:
+- better mounting plate system with multiple mounting plate designs
+- improved lid design (potentially getting rid of need for screws and nuts)
+- auxiliary IMU support
+- updated build guide to include battery sense and charging diodes
+
+If you currently use or have used V4, please reach out to me on Discord to let me know of any other issues that you'd like to see fixed for V4+
